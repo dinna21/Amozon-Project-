@@ -1,0 +1,136 @@
+/* THis below code for heder section I use positons flex media loke thse properties in css */
+.Amozon-header{
+    background-color: rgba(18, 13, 47, 0.61);
+    color: white;
+    padding-left: 15px;
+    padding-right:15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: top;
+    justify-content: space-around;
+    column-gap: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    position: sticky;
+
+}
+.Amozon-header-left-section{
+    width: 180px;
+
+}
+@media (min-width: 768px){
+    .Amozon-header-left-section{
+        width: unset;
+    }
+}
+.header-link{
+    display: inline-block;
+    padding: 6px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    /* border: 1px solid rgba(0, 0, 0, 0.61)     */
+
+}
+.header-link:hover{
+    border: 1px solid white;
+}
+.amozon-logo{
+    width: 100px;
+    margin-top: 6px;
+}
+.amozon-logo-mobile{
+    display: none;
+}
+@media (max-width: 575px) {
+        .amozon-logo {
+            display: none;
+        }
+        .amozon-logo-mobile{
+            display: block;
+            height: 35px;
+            margin-top: 5px;            
+        }
+    
+    
+}
+.Amozon-header-middle-section{
+    flex: 1;
+    max-width: 860px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Search-bar{
+    flex: 1;
+    width: 0;
+    font-size: 16px;
+    height: 38px;
+    padding-left: 15px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.search-button{
+    background-color: rgb(254, 189, 105);
+    border: none;
+    width: 45px;
+    height: 38px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    flex-shrink: 0; 
+}
+.search-icon{
+    height: 22px;
+    margin-left: 2px;
+    margin-top: 3px;
+}
+.right-section{
+    width: 180px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+.orders-link-header-link{
+    color: white;
+}
+.returns-text{
+    display: block;
+    font-size: 18px;
+}
+.orders-text{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+}
+.cart-link-header{
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.cart-image{
+    width: 50px;
+}
+.cart-quantity{
+    position: absolute;
+    font-size: 16px;
+    font-weight: 700;
+    top: 4px;
+    left: 25px;
+    width: 26px;
+    color: rgb(240, 136, 4);
+}
+.cart-text{
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 700;
+}
