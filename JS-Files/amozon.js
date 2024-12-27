@@ -1,6 +1,7 @@
 console.log("Starting");
 let productHTML = '';
 // In this code we generate the prodcuts in fo using the js code that's we do that bleow.
+// The advantage of this js codes are we can't use the html codes again and again for all the products and we have to only details of the products only.
 const products = [{
      image: '../products/athletic-cotton-socks-6-pairs.jpg',
      name: 'Black and Gray Athletic Cotton Socks - 6 Pairs',
@@ -25,6 +26,14 @@ const products = [{
         count: 56
      },
      priceCent:799
+},{
+    image: '../products/black-2-slot-toaster.jpg',
+    name: '2 Slot Toaster - Black',
+    rating:{
+       stars: 5,
+       count: 2197
+    },
+    priceCent:1899
 }];
 products.forEach((product) => {
     productHTML+=`   
