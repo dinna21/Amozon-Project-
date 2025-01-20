@@ -1,7 +1,11 @@
+import { cart } from "../JS-Files/cart.js";
 console.log("Starting");
 let productHTML = '';
 // In this code we generate the prodcuts in fo using the js code that's we do that bleow.
 // The advantage of this js codes are we can't use the html codes again and again for all the products and we have to only details of the products only.
+
+
+
 const products = [
     {
       id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
@@ -734,6 +738,15 @@ document.querySelectorAll('.js-add-to-cart-button')
           productId: productId,
           quantity: 1 
     })}
+    let cartQuantity = 0;
+    cart.forEach((item) => {
+      cartQuantity += item.quantity;
+    });
+
+    document.querySelector('.cart-quantity-js')
+    .innerHTML = cartQuantity;
+
     console.log(cart);
+    console.log(cartQuantity);
   });
 });

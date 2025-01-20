@@ -1,7 +1,7 @@
 /* THis below code for heder section I use positons flex media loke thse properties in css */
 .Amozon-header{
-    background-color: rgba(18, 13, 47, 0.61);
-    color: white;
+    background-color: rgba(12, 4, 51, 0.61);
+    color: rgb(237, 234, 234);
     padding-left: 15px;
     padding-right:15px;
     display: flex;
