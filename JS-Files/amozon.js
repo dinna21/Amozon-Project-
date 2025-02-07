@@ -1,4 +1,4 @@
-import { cart } from "../JS-Files/cart.js";
+import { cart,AddToCart } from "../JS-Files/cart.js";
 import { products } from "../JS-Files/products.js"; 
 console.log("Starting");
 let productHTML = '';
@@ -67,27 +67,7 @@ function UpdateCartQuantity()
   console.log(cartQuantity);
 }
 
-function AddToCart(productId)
-{
-  let matchingItem;
-  cart.forEach((item) => {
-  if(productId === item.productId)
-  {
-    matchingItem = item;
-  }
-  });
-  if(matchingItem)
-  {
-    matchingItem.quantity++;
-  }
-  else
-  {
-    cart.push(
-      {
-        productId: productId,
-        quantity: 1 
-  })}
-}
+
 document.querySelectorAll('.js-add-to-cart-button')
  .forEach((button) =>
 {
